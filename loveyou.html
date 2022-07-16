@@ -14,7 +14,7 @@
                 font-family: "Helvetica Neue", "Luxi Sans", "DejaVu Sans", Tahoma, "Hiragino Sans GB", "Microsoft Yahei", sans-serif;
                 background: #79a8ae;
                 color: #CFEBE4;
-                font-size: 18px;
+                font-size: 17px;
                 line-height: 2;
                 letter-spacing: 1.2px;
                 margin: 0;
@@ -124,7 +124,7 @@
             init: function () {
                 S.Drawing.init('.canvas');
                 document.body.classList.add('body--ready');
-                S.UI.simulate("Má ơi|con thích|bạn này|quá rồi|UME ❤️|#time");
+                S.UI.simulate("Tớ|thích|cậu|quá|rồi|❤️|#time");
                 S.Drawing.loop(function () {
                     S.Shape.render();
                 });
@@ -158,7 +158,7 @@
                     requestFrame.call(window, this.loop.bind(this));
                 },
                 adjustCanvas: function () {
-                    canvas.width = window.innerWidth - 100;
+                    canvas.width = window.innerWidth - 0;
                     canvas.height = window.innerHeight - 30;
                 },
                 clearFrame: function () {
