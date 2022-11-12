@@ -81,18 +81,19 @@ body {
          <div id="music">     
                <audio controls autoplay loop>Your browser does not support the audio element.</audio>
          </div>
+         <div>
+         <canvas id="pinkboard"></canvas>
+        </div>
          <h1>💕 UME 💕</h1>
          <div id="bubbles" style="visibility:hidden">
             <img src="./img/1.png">
             <img src="./img/2.png">
             <img src="./img/1.png">
             </div>
+            
 <p></p>
 </div>
- 
-<div class="box">
-    <canvas id="pinkboard"></canvas>
-  </div>
+    
 </body>
 <script>
     /* 
@@ -102,9 +103,9 @@ body {
       particles: {
         length: 3500, // maximum amount of particles
         duration: 2.5, // particle duration in sec
-        velocity: 150, // particle velocity in pixels/sec
+        velocity: 100, // particle velocity in pixels/sec
         effect: -0.6, // play with this for a nice effect
-        size: 13, // particle size in pixels
+        size: 11, // particle size in pixels
       },
     };
 
@@ -434,7 +435,7 @@ body {
 
       // handle (re-)sizing of the canvas
       function onResize() {
-        var heightRatio = 2;
+        var heightRatio = 2.5;
         canvas.width = canvas.clientWidth * heightRatio;
         canvas.height = canvas.clientHeight * heightRatio;
       }
